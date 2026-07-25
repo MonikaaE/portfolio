@@ -16,6 +16,8 @@ export default function Hero({ scrollToSection }) {
           <div className="avatar-glow-shadow"></div>
           <img src="/avatar.jpeg" alt="Monika's avatar" className="avatar-img" width="1024" height="1280" />
         </div>
+
+        
       </div>
 
       <div
