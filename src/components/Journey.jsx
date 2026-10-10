@@ -3,12 +3,20 @@ import React from 'react';
 export default function Journey() {
   const timelineData = [
     {
-      year: '2025',
+      year: 'Jul 2026–Present',
+      role: 'Software Developer',
+      company: 'BG and F Tech Distribution • Dubai, UAE',
+      content: 'Build and maintain web applications delivering frontend and backend enhancements. Manage website deployment, domain, hosting, and production troubleshooting; configure business email and Outlook systems, and support internal IT operations.',
+      inverted: false,
+    },
+    {
+      year: '2026',
       role: 'Full Stack Developer',
       company: 'Builder Pluss • Chennai',
       content: 'Leading development of scalable production web modules — improved workflow efficiency by 50% and shipped dynamic REST APIs powering core business operations.',
-      inverted: false,
+      inverted: true,
     },
+    
     {
       year: '2024',
       role: 'Full Stack Developer Intern',
