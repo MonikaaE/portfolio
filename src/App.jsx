@@ -114,7 +114,7 @@ export default function App() {
       <SocialSidebar />
 
       {/* 6. Sticky Resume Button (Right) */}
-      <ResumeSidebar openModal={() => setIsResumeModalOpen(true)} />
+      {/* <ResumeSidebar openModal={() => setIsResumeModalOpen(true)} /> */}
 
       {/* Main Content Sections */}
       <main>

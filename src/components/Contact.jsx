@@ -32,8 +32,8 @@ export default function Contact() {
             </svg>
             monika031215@gmail.com
           </a>
-          <a href="tel:+918754220977" className="btn-secondary">
-            +91 8754220977
+          <a href="tel:+971505431251" className="btn-secondary">
+            +971 505431251
           </a>
         </div>
       </div>
