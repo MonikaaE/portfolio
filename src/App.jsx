@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import CustomCursor from './components/CustomCursor';
+import ScrollProgress from './components/ScrollProgress';
 import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
@@ -57,7 +59,7 @@ export default function App() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
       observer.disconnect();
@@ -85,17 +87,23 @@ export default function App() {
 
   return (
     <>
-      {/* 1. Preloader Screen */}
+      {/* Numak Tech Style Custom Interactive Cursor */}
+      <CustomCursor />
+
+      {/* Dynamic Top Scroll Bar & Circular Back to Top Button */}
+      <ScrollProgress />
+
+      {/* Preloader Screen */}
       <Preloader />
 
-      {/* 2. Ambient Background Glow Orbs */}
+      {/* Ambient Background Glow Orbs */}
       <div className="ambient-glows-container" aria-hidden="true">
         <div className="glow-orb orb-top-left animate-pulse-glow"></div>
         <div className="glow-orb orb-middle-right animate-pulse-glow"></div>
         <div className="glow-orb orb-bottom-left"></div>
       </div>
 
-      {/* 3. Fixed Navbar */}
+      {/* Fixed Navbar */}
       <Navbar
         activeSection={activeSection}
         isMobileMenuOpen={isMobileMenuOpen}
@@ -103,17 +111,17 @@ export default function App() {
         scrollToSection={scrollToSection}
       />
 
-      {/* 4. Mobile Menu Drawer */}
+      {/* Mobile Menu Drawer */}
       <MobileMenu
         isOpen={isMobileMenuOpen}
         activeSection={activeSection}
         scrollToSection={scrollToSection}
       />
 
-      {/* 5. Sticky Social Strip (Left) */}
+      {/* Sticky Social Strip (Left) */}
       <SocialSidebar />
 
-      {/* 6. Sticky Resume Button (Right) */}
+      {/* Sticky Resume Button (Right) */}
       {/* <ResumeSidebar openModal={() => setIsResumeModalOpen(true)} /> */}
 
       {/* Main Content Sections */}
