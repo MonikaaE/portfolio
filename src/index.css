@@ -1331,28 +1331,9 @@ img, svg {
         font-size: 0.825rem;
     }
     
+    /* Hide avatar picture on mobile screens */
     .hero-avatar-container {
-        position: static;
-        width: 100%;
-        max-width: 280px;
-        margin-top: 0;
-        display: flex;
-        justify-content: center;
-        pointer-events: auto;
-    }
-    
-    .avatar-float-wrapper {
-        justify-content: center;
-        max-width: 260px;
-        width: 100%;
-    }
-    
-    .avatar-img {
-        height: auto;
-        max-height: 300px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 1.25rem;
+        display: none !important;
     }
     
     .hero-scroll-indicator {
