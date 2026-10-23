@@ -55,7 +55,7 @@ export default function Hero({ scrollToSection }) {
             onClick={() => scrollToSection('#work')}
             data-cursor-text="EXPLORE ↓"
  style={{
-    fontSize: window.innerWidth <= 768 ? "12px" : "16px",
+    fontSize: window.innerWidth <= 1000 ? "12px" : "16px",
   }}          >
             <span>View Projects</span>
             <svg
